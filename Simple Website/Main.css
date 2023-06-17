@@ -1,0 +1,63 @@
+body {
+    font-family: monospace;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+.light-theme {
+    --bg: var(
+    --green);
+    --fontColor: var(
+    --black);
+    --btnBg: #1f211f;
+    --btnFontColor: #fbfbfb;
+  }
+  
+  .dark-theme {
+    --bg: var(
+    --black);
+    --fontColor: var(
+    --green);
+    --btnBg: #d9d2d2;
+    --btnFontColor: #191b19;
+  }
+
+:root {
+    --green: #000000;
+    --white: #7f7f7f;
+    --black: #2fe622;
+  }
+  .light-theme {
+    --bg: var(
+    --black);
+    --fontColor: #0e0f0e;
+  }
+  .dark-theme {
+    --bg: #0f1110;
+    --fontColor: #2fe622;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  .btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  .btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
