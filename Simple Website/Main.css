@@ -83,3 +83,39 @@ body.dark-theme {
   --background-color: #222222;
   --text-color: #ffffff;
 }
+
+body.light-theme {
+  --background-color: #ffffff;
+  --text-color: #222222;
+  --btn-bg: #222222;
+  --btn-text: #ffffff;
+}
+
+body.dark-theme {
+  --background-color: #222222;
+  --text-color: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-text: #222222;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: 2px solid #2fe622;
+  box-shadow: 0 0 5px #2fe622;
+}
