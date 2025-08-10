@@ -61,3 +61,25 @@ li {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
   }
+
+    :root {
+    --background-color: #ffffff;
+    --text-color: #222222;
+  }
+  
+:root {
+  --background-color: #ffffff;
+  --text-color: #222222;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark theme variables */
+body.dark-theme {
+  --background-color: #222222;
+  --text-color: #ffffff;
+}
